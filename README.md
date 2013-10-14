@@ -17,6 +17,24 @@ First of all take a look at the [Example Project](Example/Classes/ExampleViewCon
 ```
 
 ``` objc
+//create or use your custom object
+@interface TestObject : NSObject
+
+- (void)doSomething;
+
+@end
+
+@implementation TestObject
+
+- (void)doSomething {
+  
+  NSLog(@"%s", __FUNCTION__);
+}
+
+@end
+```
+
+``` objc
 TestObject *objTest = [TestObject new];
 
 //set the limit for a specific method
@@ -33,8 +51,8 @@ __block typeof(TestObject) *blockTest = objTest;
 dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
 dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
 
-//The doSomething Method get called
-[blockTest.limitProxy doSomething]; 
+	//The doSomething Method get called
+	[blockTest.limitProxy doSomething]; 
 });
 ```
 
