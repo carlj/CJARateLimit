@@ -1,5 +1,5 @@
 #CJARateLimit
-I liked the [SAMRateLimit](https://github.com/soffes/SAMRateLimit) Library RateLimit concept and adapt the concept. 
+I liked the [SAMRateLimit](https://github.com/soffes/SAMRateLimit) Library concept and adapt the concept with the forward invocations approach. 
 
 [![Build Status](https://travis-ci.org/carlj/CJARateLimit.png?branch=master)](https://travis-ci.org/carlj/CJARateLimit)
 [![Coverage Status](https://coveralls.io/repos/carlj/CJARateLimit/badge.png?branch=master)](https://coveralls.io/r/carlj/CJARateLimit?branch=master)
