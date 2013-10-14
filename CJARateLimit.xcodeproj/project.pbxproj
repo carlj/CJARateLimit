@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA7BA2F180BF12A006F2D5F /* CJARateLimitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BA2D180BF128006F2D5F /* CJARateLimitTests.m */; };
+		FAA7BA31180BF144006F2D5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA7BA30180BF144006F2D5F /* Images.xcassets */; };
+		FAEA6655180BCEFC00669E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6654180BCEFC00669E83 /* Foundation.framework */; };
+		FAEA6657180BCEFC00669E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6656180BCEFC00669E83 /* CoreGraphics.framework */; };
+		FAEA6659180BCEFC00669E83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6658180BCEFC00669E83 /* UIKit.framework */; };
+		FAEA6661180BCEFC00669E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA6660180BCEFC00669E83 /* main.m */; };
+		FAEA6665180BCEFC00669E83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA6664180BCEFC00669E83 /* AppDelegate.m */; };
+		FAEA666B180BCEFC00669E83 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA666A180BCEFC00669E83 /* ExampleViewController.m */; };
+		FAEA6674180BCEFC00669E83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6673180BCEFC00669E83 /* XCTest.framework */; };
+		FAEA6675180BCEFC00669E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6654180BCEFC00669E83 /* Foundation.framework */; };
+		FAEA6676180BCEFC00669E83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA6658180BCEFC00669E83 /* UIKit.framework */; };
+		FAEA668B180BCF1300669E83 /* NSObject+RateLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA668A180BCF1300669E83 /* NSObject+RateLimit.m */; };
+		FAEA668C180BCF1300669E83 /* NSObject+RateLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA668A180BCF1300669E83 /* NSObject+RateLimit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAEA6677180BCEFC00669E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEA6649180BCEFC00669E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA6650180BCEFC00669E83;
+			remoteInfo = CJARateLimit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAA7BA2D180BF128006F2D5F /* CJARateLimitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJARateLimitTests.m; path = Tests/CJARateLimitTests.m; sourceTree = SOURCE_ROOT; };
+		FAA7BA30180BF144006F2D5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Example/Ressources/Images.xcassets; sourceTree = "<group>"; };
+		FAA7BA32180BF155006F2D5F /* CJARateLimitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CJARateLimitTests-Info.plist"; path = "Tests/Other Sources/CJARateLimitTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FAEA6651180BCEFC00669E83 /* CJARateLimit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJARateLimit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA6654180BCEFC00669E83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAEA6656180BCEFC00669E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAEA6658180BCEFC00669E83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAEA665C180BCEFC00669E83 /* CJARateLimit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CJARateLimit-Info.plist"; path = "Example/Other Sources/CJARateLimit-Info.plist"; sourceTree = "<group>"; };
+		FAEA6660180BCEFC00669E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Example/Other Sources/main.m"; sourceTree = "<group>"; };
+		FAEA6662180BCEFC00669E83 /* CJARateLimit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CJARateLimit-Prefix.pch"; path = "Example/Other Sources/CJARateLimit-Prefix.pch"; sourceTree = "<group>"; };
+		FAEA6663180BCEFC00669E83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Example/Classes/AppDelegate.h; sourceTree = "<group>"; };
+		FAEA6664180BCEFC00669E83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Example/Classes/AppDelegate.m; sourceTree = "<group>"; };
+		FAEA6669180BCEFC00669E83 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExampleViewController.h; path = Example/Classes/ExampleViewController.h; sourceTree = "<group>"; };
+		FAEA666A180BCEFC00669E83 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ExampleViewController.m; path = Example/Classes/ExampleViewController.m; sourceTree = "<group>"; };
+		FAEA6672180BCEFC00669E83 /* CJARateLimitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJARateLimitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA6673180BCEFC00669E83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAEA6689180BCF1300669E83 /* NSObject+RateLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RateLimit.h"; sourceTree = "<group>"; };
+		FAEA668A180BCF1300669E83 /* NSObject+RateLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RateLimit.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEA664E180BCEFC00669E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA6657180BCEFC00669E83 /* CoreGraphics.framework in Frameworks */,
+				FAEA6659180BCEFC00669E83 /* UIKit.framework in Frameworks */,
+				FAEA6655180BCEFC00669E83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA666F180BCEFC00669E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA6674180BCEFC00669E83 /* XCTest.framework in Frameworks */,
+				FAEA6676180BCEFC00669E83 /* UIKit.framework in Frameworks */,
+				FAEA6675180BCEFC00669E83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAEA6648180BCEFC00669E83 = {
+			isa = PBXGroup;
+			children = (
+				FAEA665A180BCEFC00669E83 /* CJARateLimit */,
+				FAEA668D180BEB9400669E83 /* Example */,
+				FAEA6679180BCEFC00669E83 /* CJARateLimitTests */,
+				FAEA6653180BCEFC00669E83 /* Frameworks */,
+				FAEA6652180BCEFC00669E83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEA6652180BCEFC00669E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA6651180BCEFC00669E83 /* CJARateLimit.app */,
+				FAEA6672180BCEFC00669E83 /* CJARateLimitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEA6653180BCEFC00669E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA6654180BCEFC00669E83 /* Foundation.framework */,
+				FAEA6656180BCEFC00669E83 /* CoreGraphics.framework */,
+				FAEA6658180BCEFC00669E83 /* UIKit.framework */,
+				FAEA6673180BCEFC00669E83 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAEA665A180BCEFC00669E83 /* CJARateLimit */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA6689180BCF1300669E83 /* NSObject+RateLimit.h */,
+				FAEA668A180BCF1300669E83 /* NSObject+RateLimit.m */,
+			);
+			path = CJARateLimit;
+			sourceTree = "<group>";
+		};
+		FAEA6679180BCEFC00669E83 /* CJARateLimitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7BA2D180BF128006F2D5F /* CJARateLimitTests.m */,
+				FAEA667A180BCEFC00669E83 /* Other Sources */,
+			);
+			path = CJARateLimitTests;
+			sourceTree = "<group>";
+		};
+		FAEA667A180BCEFC00669E83 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7BA32180BF155006F2D5F /* CJARateLimitTests-Info.plist */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FAEA668D180BEB9400669E83 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA668E180BEB9900669E83 /* Classes */,
+				FAEA6690180BEBAC00669E83 /* Other Sources */,
+				FAEA668F180BEBA200669E83 /* Ressources */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		FAEA668E180BEB9900669E83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA6663180BCEFC00669E83 /* AppDelegate.h */,
+				FAEA6664180BCEFC00669E83 /* AppDelegate.m */,
+				FAEA6669180BCEFC00669E83 /* ExampleViewController.h */,
+				FAEA666A180BCEFC00669E83 /* ExampleViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FAEA668F180BEBA200669E83 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7BA30180BF144006F2D5F /* Images.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		FAEA6690180BEBAC00669E83 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA665C180BCEFC00669E83 /* CJARateLimit-Info.plist */,
+				FAEA6660180BCEFC00669E83 /* main.m */,
+				FAEA6662180BCEFC00669E83 /* CJARateLimit-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEA6650180BCEFC00669E83 /* CJARateLimit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA6683180BCEFC00669E83 /* Build configuration list for PBXNativeTarget "CJARateLimit" */;
+			buildPhases = (
+				FAEA664D180BCEFC00669E83 /* Sources */,
+				FAEA664E180BCEFC00669E83 /* Frameworks */,
+				FAEA664F180BCEFC00669E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJARateLimit;
+			productName = CJARateLimit;
+			productReference = FAEA6651180BCEFC00669E83 /* CJARateLimit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAEA6671180BCEFC00669E83 /* CJARateLimitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA6686180BCEFC00669E83 /* Build configuration list for PBXNativeTarget "CJARateLimitTests" */;
+			buildPhases = (
+				FAEA666E180BCEFC00669E83 /* Sources */,
+				FAEA666F180BCEFC00669E83 /* Frameworks */,
+				FAEA6670180BCEFC00669E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEA6678180BCEFC00669E83 /* PBXTargetDependency */,
+			);
+			name = CJARateLimitTests;
+			productName = CJARateLimitTests;
+			productReference = FAEA6672180BCEFC00669E83 /* CJARateLimitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEA6649180BCEFC00669E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Carl Jahn";
+				TargetAttributes = {
+					FAEA6671180BCEFC00669E83 = {
+						TestTargetID = FAEA6650180BCEFC00669E83;
+					};
+				};
+			};
+			buildConfigurationList = FAEA664C180BCEFC00669E83 /* Build configuration list for PBXProject "CJARateLimit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAEA6648180BCEFC00669E83;
+			productRefGroup = FAEA6652180BCEFC00669E83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEA6650180BCEFC00669E83 /* CJARateLimit */,
+				FAEA6671180BCEFC00669E83 /* CJARateLimitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEA664F180BCEFC00669E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA7BA31180BF144006F2D5F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA6670180BCEFC00669E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEA664D180BCEFC00669E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA666B180BCEFC00669E83 /* ExampleViewController.m in Sources */,
+				FAEA668B180BCF1300669E83 /* NSObject+RateLimit.m in Sources */,
+				FAEA6665180BCEFC00669E83 /* AppDelegate.m in Sources */,
+				FAEA6661180BCEFC00669E83 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA666E180BCEFC00669E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA668C180BCF1300669E83 /* NSObject+RateLimit.m in Sources */,
+				FAA7BA2F180BF12A006F2D5F /* CJARateLimitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEA6678180BCEFC00669E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA6650180BCEFC00669E83 /* CJARateLimit */;
+			targetProxy = FAEA6677180BCEFC00669E83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAEA6681180BCEFC00669E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAEA6682180BCEFC00669E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAEA6684180BCEFC00669E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJARateLimit-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJARateLimit-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAEA6685180BCEFC00669E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJARateLimit-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJARateLimit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAEA6687180BCEFC00669E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJARateLimit.app/CJARateLimit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJARateLimit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Other Sources/CJARateLimitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAEA6688180BCEFC00669E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJARateLimit.app/CJARateLimit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJARateLimit-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Other Sources/CJARateLimitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEA664C180BCEFC00669E83 /* Build configuration list for PBXProject "CJARateLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA6681180BCEFC00669E83 /* Debug */,
+				FAEA6682180BCEFC00669E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA6683180BCEFC00669E83 /* Build configuration list for PBXNativeTarget "CJARateLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA6684180BCEFC00669E83 /* Debug */,
+				FAEA6685180BCEFC00669E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA6686180BCEFC00669E83 /* Build configuration list for PBXNativeTarget "CJARateLimitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA6687180BCEFC00669E83 /* Debug */,
+				FAEA6688180BCEFC00669E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEA6649180BCEFC00669E83 /* Project object */;
+}
